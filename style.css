@@ -14,7 +14,7 @@ body{
     height: 100vh;
     display: flex;
 }
-side{
+aside{
     background-color: #d7d9ad;
     width: 200px;
     display: flex;
@@ -24,17 +24,20 @@ side{
     justify-content: space-between;
 
 }
-side ul{
+aside ul{
     padding: 0;
     list-style-type: none;
 
 }
-side a{
+aside a{
     color: black;
     text-decoration: none;
     margin: 1rem;
     font-size: 1.1rem;
     display: inline-block;
+}
+a:hover{
+    background-color:#634c04 ;
 }
 .special{
     background-color: black;
@@ -46,7 +49,7 @@ side a{
 }
 main{
     font-size: 2rem;
-    padding: 1.5rem;
+    padding: 1rem;
     margin-left: 3rem;
 }
 main h1{
@@ -65,10 +68,28 @@ main h3{
 @media screen and (max-width:700px) {
     body{
         flex-direction: column-reverse;
+        justify-content: space-between;
     }
-    side{
+    main{
+        min-height: 70vh;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    aside{
         height: auto;
         width: 100%;
+    }
+    aside ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .special{
+        display: none;
+    }
+    .logo{
+        font-size: 2rem;
+
     }
     
 }
