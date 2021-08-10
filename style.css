@@ -1,10 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
 *{
     box-sizing: border-box;
 
 }
 body{
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: blanchedalmond;
+    font-family: 'Prata', serif;
+    background-image: url(./images/bhargava-srivari-0pDUGYuDYWw-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+}
+aside{
+    background-color: #d7d9ad;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100vh;
+    justify-content: space-between;
+
+}
+aside ul{
+    padding: 0;
+    list-style-type: none;
+
+}
+aside a{
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+a:hover{
+    background-color:#634c04 ;
+}
+.special{
+    background-color: black;
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+
+}
+main{
+    font-size: 2rem;
+    padding: 1rem;
+    margin-left: 3rem;
+}
+main h1{
+    margin: 0;
+
+}
+main h3{
+    margin: 0;
+    color: #634c04;
+    
+}
+.logo{
+    font-size: 3rem;
+}
+/* media queries */
+@media screen and (max-width:700px) {
+    body{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    main{
+        min-height: 70vh;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+    aside{
+        height: auto;
+        width: 100%;
+    }
+    aside ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .special{
+        display: none;
+    }
+    .logo{
+        font-size: 2rem;
+
+    }
+    
 }
