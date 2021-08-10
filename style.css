@@ -14,3 +14,51 @@ body{
     height: 100vh;
     display: flex;
 }
+side{
+    background-color: #d7d9ad;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    height: 100vh;
+    justify-content: space-between;
+
+}
+side ul{
+    padding: 0;
+    list-style-type: none;
+
+}
+side a{
+    color: black;
+    text-decoration: none;
+    margin: 1rem;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.special{
+    background-color: black;
+    color: #fff;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+
+}
+main{
+    font-size: 2rem;
+    padding: 1.5rem;
+    margin-left: 3rem;
+}
+main h1{
+    margin: 0;
+
+}
+main h3{
+    margin: 0;
+    color: #634c04;
+    
+}
+.logo{
+    font-size: 3rem;
+}
+
