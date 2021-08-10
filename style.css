@@ -61,4 +61,14 @@ main h3{
 .logo{
     font-size: 3rem;
 }
-
+/* media queries */
+@media screen and (max-width:700px) {
+    body{
+        flex-direction: column-reverse;
+    }
+    side{
+        height: auto;
+        width: 100%;
+    }
+    
+}
